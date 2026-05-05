@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <input type="number" id="vx1" placeholder="vx1">
@@ -11,8 +12,10 @@
 
     <button onclick="drawVectors()">Draw Vectors</button>
     <script src="sketch.js"></script>
-    <h2>v1 is the green one</h2>
-    <h2>v2 is the red one</h2>
-    <h2>v1 + v2 is the blue one</h2>
+    <ul>
+      <li id = "label1">v1 = (vx1, vy1)</li>
+      <li id = "label2">v2 = (vx2, vy2)</li>
+      <li id = "label3">v3 = (vx1 + vx2, vy1 + vy2)</li>
+    </ul>
   </body>
 </html>
